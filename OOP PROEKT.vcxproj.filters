@@ -26,7 +26,7 @@
     <ClInclude Include="SoundPlayer.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Piano.h">
+    <ClInclude Include="Piano.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,10 +1,12 @@
-#ifndef PIANO_H
-#define PIANO_H
+#ifndef PIANO_HPP
+#define PIANO_HPP
+
 
 #include <iostream>
 #include <thread>
 #include <chrono>
-#include <stdexcept>
+#include <exception>
+
 
 class Piano { // Класс Piano отвечает за логику нажатия 
               // клавиш и воспроизведение звука. Он содержит
@@ -16,6 +18,9 @@ public:
     // Метод для воспроизведения звука
     void playKey(char key);
 
+    // TODO:
+    void display();
+
 private:
     // Метод для временной индикации нажатой клавиши
     void pressKey(char key);
@@ -24,4 +29,4 @@ private:
     void soundEffect(char key);
 };
 
-#endif // PIANO_H
+#endif // PIANO_HPP

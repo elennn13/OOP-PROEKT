@@ -131,7 +131,7 @@
     <ClCompile Include="Piano.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Piano.h" />
+    <ClInclude Include="Piano.hpp" />
     <ClInclude Include="SoundPlayer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

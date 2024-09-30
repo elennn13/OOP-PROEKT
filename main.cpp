@@ -1,7 +1,5 @@
 ﻿#include <iostream>
-#include <cctype>
-#include "Piano.h"
-#include "Piano.cpp"
+#include "Piano.hpp"
 #include <conio.h> // Для _getch()
 
 int main() {
@@ -9,7 +7,7 @@ int main() {
 
     Piano piano;
     char inputKey;
-    void displayPiano(); // Показываем начальное пианино
+    piano.display();
 
     while (true) {
         inputKey = _getch(); // Ожидаем нажатия клавиши
@@ -17,9 +15,7 @@ int main() {
         // Очистка экрана (имитация)
         system("cls");
 
-        displayPiano(); // Отображаем пианино снова
-        pressKey(key);  // Отображаем нажатую клавишу
-        soundEffect(key); // Воспроизводим звук
+        piano.display();
     }
 
     //std::cin >> inputKey;
@@ -30,5 +26,7 @@ int main() {
     catch (const std::invalid_argument& e) {
         std::cerr << e.what() << std::endl; // Обработка исключений
     }
+
+
     return 0;
 }
